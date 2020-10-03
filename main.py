@@ -43,9 +43,9 @@ for i in range(steps_of_time_number):
         if (abs(x[n]) <= x_max ) and (abs(y[n]) <= y_max):
             unit.goto(x[n], y[n])
             step(n)
-        elif (abs(x[n])<=x_max ) and (abs(y[n])> y_max):
+        elif (abs(x[n]) <= x_max ) and (abs(y[n]) > y_max):
             y_def(n)
-            unit.goto(x[n],y[n])
+            unit.goto(x[n], y[n])
             vy[n] = - vy[n]
             step(n)
         elif (abs(x[n]) > x_max) and (abs(y[n]) <= y_max):
